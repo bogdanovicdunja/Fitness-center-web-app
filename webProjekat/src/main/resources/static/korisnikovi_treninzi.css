@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: cornflowerblue;
+    background-size: 600px;
+    background-position: center;
+    font-family: Verdana;
+    padding: 70px 30px;
+}
+
+#treninziTabela{
+    width: 430px;
+    height: 500px;
+    background: cadetblue;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.regbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.regbox input{
+    width: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-align: left;
+}
+
+.regbox input[type="text"], input[type="password"], input[type="date"]
+{
+    border-bottom: 1px solid #000;
+    background: #fff;
+    outline: none;
+    height: 30px;
+    color: #000;
+    font-size: 14px;
+    margin: 10px 60px;
+}
+
+.regbox button{
+    height: 30px;
+    margin-top: 3px;
+
+}

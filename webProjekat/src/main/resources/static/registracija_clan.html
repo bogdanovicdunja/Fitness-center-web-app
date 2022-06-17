@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registracija</title>
+
+    <link rel="stylesheet" type="text/css" href="korisnik.css">
+    <!-- 1. Ukljucivanje jQuery biblioteke -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- 3. Ukljucivanje naseg JS fajla -->
+    <script src="js/korisnici.js"></script>
+
+</head>
+<body>
+<div class="registerbox">
+    <h2><u>Registracija korisnika</u></h2>
+    <br>
+    <form id="registracijaClan">    <!-- id forme bitan za JS kod, jer imamo vise formi, pa da znamo kojoj da pristupimo-->
+        <br>
+        <p>Ime</p>
+        <input type="text" id="ime" placeholder="Name" required>
+        <p>Prezime</p>
+        <input type="text" id="prezime" placeholder="Last name" required>
+        <p>Dautm rodjenja</p>
+        <input type="date" id="datumRodjenja" placeholder="Date of birth" required>
+        <p>Korisnicko ime</p>
+        <input type="text" id="korisnickoIme" placeholder="Username" required>
+        <p>Lozinka</p>
+        <input type="password" id="lozinka" placeholder="Password" required>
+        <p>Kontak telefon</p>
+        <input type="text" id="kontaktTelefon" placeholder="Phone number" required>
+        <p>E-mail</p>
+        <input type="text" id="eMail" placeholder="name@example.com" required>
+
+        <p><button type="submit" class="btn btn-primary">Regustruj se</button></p>
+
+    </form>
+
+    <br>
+    <p>
+        <a href="http://localhost:63342/webProjekat/static/prijava_korisnika.html" class="link-primary">Prijavi se</a>
+    </p>
+</div>
+</body>
+</html>

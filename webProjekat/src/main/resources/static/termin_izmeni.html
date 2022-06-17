@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Azuriranje termina</title>
+
+  <link rel="stylesheet" type="text/css" href="korisnik.css">
+  <!-- 1. Ukljucivanje jQuery biblioteke -->
+  <script src="js/jquery.min.js"></script>
+  <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+  <!-- 3. Ukljucivanje naseg JS fajla -->
+  <script src="js/izmeni_termin.js"></script>
+
+</head>
+<body>
+
+<div class="registerbox">
+  <h2><u>Azuriranje termina</u></h2>
+  <br>
+
+  <form id="termin">
+    <input type="hidden" id="idTermina">
+    <br>
+    <p>Cena</p>
+    <input type="text" id="cena"  required>
+    <p>Vreme</p>
+    <input type="datetime-local" id="vreme"  required>
+    <p>Naziv</p>
+      <input type="text" id="naziv"  required>
+    <p>Opis</p>
+      <input type="text" id="opis"  required>
+    <p>Tip</p>
+    <input type="text" id="tipTreninga"  required>
+    <p>Trajanje</p>
+    <input type="text" id="trajanje"  required>
+
+
+    <select id="salaId"></select>
+
+    <p><button type="submit" class="btn btn-primary">Azuriraj termin</button></p>
+
+    <p>
+      <a href="http://localhost:63342/webProjekat/static/termini_trener.html?_ijt=71c5v36bute0m623bolrth9dmc" class="link-primary">Nazad na termine</a>
+    </p>
+  </form>
+
+</div>
+</body>
+</html>

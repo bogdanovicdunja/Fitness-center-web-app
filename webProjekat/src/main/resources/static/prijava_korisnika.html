@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pocetna stranica</title>
+
+    <link rel="stylesheet" type="text/css" href="pocetna.css">
+    <!-- 1. Ukljucivanje jQuery biblioteke -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- 3. Ukljucivanje mog JS fajla -->
+    <script src="js/korisnici.js"></script>
+
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: Verdana;
+            font-weight: bold;
+            color: rgba(58, 23, 66, 0.952);
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>FITNESS CENTAR</h1>
+<div class="loginbox">
+    <h2><u>Prijava korisnika</u></h2>
+    <br>
+    <form id="prijava">        <!-- id forme bitan za JS kod, jer imamo vise formi, pa da znamo kojoj da pristupimo-->
+        <br>
+        <p>Korisnicko ime</p>
+        <input type="text" id="korisnickoIme" placeholder="Username" required>
+        <p>Lozinka</p>
+        <input type="password" id="lozinka" placeholder="Password" required>
+        <p>
+            <button type="submit" class="btn btn-primary">Potvrdi</button>
+        </p>
+        <br>
+        <p>Nemate nalog?</p>
+        <br>
+        <p>
+            <a href="http://localhost:63342/webProjekat/static/registracija_clan.html?_ijt=f9l0qkrkdd1ev5nhev6taiatje" class="link-primary">Registrujte se</a>
+        </p>
+        <br>
+        <p>
+            <a href="http://localhost:63342/webProjekat/static/registracija_trener.html?_ijt=f9l0qkrkdd1ev5nhev6taiatje" class="link-primary">Registrujte se kao trener</a>
+        </p>
+    </form>
+</div>
+
+
+
+
+</body>
+</html>

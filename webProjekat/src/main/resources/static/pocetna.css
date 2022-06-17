@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(finessCentar.jpg);
+    background-size: 600px;
+    background-position: center;
+    font-family: Verdana;
+    padding: 70px 30px;
+}
+
+.loginbox{
+    width: 320px;
+    height: 430px;
+    background: rgb(183, 207, 216);
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+h2{
+    margin: 10;
+    padding: 0;
+    text-align: center;
+    font-size: 22px;   
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginbox input{
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;  
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border-bottom: 1px solid #000;
+    background: #fff;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    margin: 10px 60px;
+}

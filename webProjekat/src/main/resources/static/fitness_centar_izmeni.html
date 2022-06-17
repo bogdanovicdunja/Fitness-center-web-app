@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Azuriranje centra</title>
+
+  <link rel="stylesheet" type="text/css" href="korisnik.css">
+  <!-- 1. Ukljucivanje jQuery biblioteke -->
+  <script src="js/jquery.min.js"></script>
+  <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+  <script src="js/jquery.validate.min.js"></script>
+  <!-- 3. Ukljucivanje naseg JS fajla -->
+  <script src="js/fitness_centar_izmeni.js"></script>
+
+</head>
+<body>
+
+<div class="registerbox">
+  <h2><u>Azuriranje centra</u></h2>
+  <br>
+
+  <form id="fitness">
+    <br>
+    <input type="hidden" id="idFitness">
+    <p>Naziv</p>
+      <input type="text" id="naziv" placeholder="Naziv" required>
+    <p>Adresa</p>
+      <input type="text" id="adresa" placeholder="Adresa" required>
+    <p>Broj telefona</p>
+      <input type="text" id="brojTelefona" placeholder="Broj telefona" required>
+    <p>E-mail</p>
+      <input type="text" id="eMail" placeholder="name@example.com" required>
+
+    <p><button type="submit" class="btn btn-primary">Izmeni</button></p>
+
+    <p>
+      <a href="http://localhost:63342/webProjekat/static/svi_fitness_centri.html?_ijt=u4r9ioi2p6cbgpav5tsddji5r0">Svi Fitness centri</a>
+    </p>
+  </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nova Sala</title>
+
+  <link rel="stylesheet" type="text/css" href="korisnik.css">
+  <!-- 1. Ukljucivanje jQuery biblioteke -->
+  <script src="js/jquery.min.js"></script>
+  <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+  <script src="js/jquery.validate.min.js"></script>
+  <!-- 3. Ukljucivanje naseg JS fajla -->
+  <script src="js/sala.js"></script>
+
+</head>
+<body>
+
+<div class="registerbox">
+  <h2><u>Dodavanje sale</u></h2>
+  <br>
+
+  <form id="sala">
+    <br>
+    <p>Kapacitet</p>
+      <input type="text" id="kapacitet" placeholder="Kapacitet" required>
+    <p>Oznaka</p>
+      <input type="text" id="oznaka" placeholder="Oznaka" required>
+    <p>Fitness centar</p>
+    <select id="fitnessCentarId">
+
+    </select>
+
+    <p><button type="submit" class="btn btn-primary">Dodaj</button></p>
+
+    <p>
+      <a href="http://localhost:63342/webProjekat/static/sve_sale.html?_ijt=j2to5mnp677o0j7i5pe7m5tbqe" class="link-primary">Sve sale</a>
+    </p>
+  </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Treninzi trener</title>
+
+    <link rel="stylesheet" type="text/css" href="treninzi.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- 1. Ukljucivanje jQuery biblioteke -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- 3. Ukljucivanje naseg JS fajla -->
+    <script src="js/termini_trener.js"></script>
+
+</head>
+
+<body>
+<div class="odobrenje">
+    <h1>Treninzi</h1>
+    <input type="text" id="myInput" size="6" onkeyup="myFunctionN()" placeholder="Po nazivu">
+
+    <input type="text" id="myInputTip" size="6" onkeyup="myFunction()" placeholder="Po tipu">
+    <input type="text" id="myInputOpis" size="6" onkeyup="myFunctionO()" placeholder="Po opisu">
+    <input type="text" id="poCeni" size="6" onkeyup="myFunctionC()" placeholder="Po ceni">
+    <input type="text" id="poVremenuTermina" size="7" onkeyup="myFunctionV()" placeholder="Po vremenu">
+
+    <form id="pretraziOdabrano">  <!-- FORMA KOJU KORISNIK POPUNJAVA/NAMESTA --- odvija se filtriranje -->
+        <input type="text" id="naziv" size="6" placeholder="Po nazivu">
+        <input type="text" id="opis" size="6"  placeholder="Po opisu"> <br>
+        <input id="minVreme" type="datetime-local" placeholder="Pocetno vreme">
+        <input id="maxVreme" type="datetime-local" placeholder="Krajnje vreme"> <br>
+
+
+        Tip:
+            <select id="tip">   <!--kad kliknemo biramo koji trening zelimo -->
+                <option value="">Sve</option>
+                <option value="kondicioni">Kondicioni</option>
+                <option value="funkcionalni">Funkcionalni</option>
+                <option value="istezanje">Istezanje</option>
+                <option value="cardio">Kardio</option>
+            </select>
+        <br>
+
+        Min cena:
+            <input type="number" id="minCena" required>    <!--korisnik unosi --> <!--#minTrajanja za izvlacenje vrednosti posatka koji je korisnik uneo; js -->
+        Max cena:
+            <input type="number" id="maxCena" required>    <!--korisnik unosi -->
+        <br>
+
+            <input type="submit" value="Pretrazi" required>    <!--nakon odabira svega, ide se na dugme Pretrazi -->
+    </form>
+
+    <table class="table" id="treninziTabela">
+        <tr>
+            <th>Naziv</th>      <!-- kolone zaglavlja -->
+            <th>Tip</th>
+            <th>Opis</th>
+            <th>Trajanje</th>
+            <th>Vreme termina</th>
+            <th>Cena</th>
+            <th>Izmeni</th>
+
+        </tr>
+    </table>
+
+    <a href="http://localhost:63342/webProjekat/static/termin_dodaj.html">Dodaj termin</a>
+
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

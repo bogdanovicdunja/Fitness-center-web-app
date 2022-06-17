@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(finessCentar.jpg);
+    background-size: 600px;
+    background-position: center;
+    font-family: Verdana;
+    padding: 70px 30px;
+}
+
+.registerbox{
+    width: 380px;
+    height: 700px;
+    background: rgb(183, 207, 216);
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+h2{
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+    font-size: 22px; 
+}
+
+.registerbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.registerbox input{
+    width: 250px;
+    margin-bottom: 20px;
+    text-align: center;  
+    text-align: left; 
+}
+
+.registerbox input[type="text"], input[type="password"], input[type="date"]
+{
+    border-bottom: 1px solid #000;
+    background: #fff;
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 14px;
+    margin: 10px 60px;
+}
+
+.registerbox button{
+    height: 30px;
+    margin-top: 3px;
+
+}

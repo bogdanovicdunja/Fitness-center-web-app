@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(lockers.jpg);
+    background-size: 600px;
+    background-position: center;
+    font-family: Verdana;
+    padding: 70px 30px;
+}
+
+h1{
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(153, 54, 54);
+    text-align: center;
+}
+
+.odobrenje{
+    width: 900px;
+    height: 600px;
+    color: black;
+    top: 50%;
+    left: 50%;
+    background: burlywood;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.odobrenje p{
+    margin: 20;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.odobrenje input[type="checkbox"]
+{
+    margin-left: 70px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Azuriranje clana</title>
+
+    <link rel="stylesheet" type="text/css" href="korisnik.css">
+    <!-- 1. Ukljucivanje jQuery biblioteke -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 2. Ukljucivanje jQuery Validate biblioteke za validaciju polja forme -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <!-- 3. Ukljucivanje naseg JS fajla -->
+    <script src="js/izmena_clan.js"></script>
+
+</head>
+<body>
+<div class="registerbox">
+    <h2><u>Azuriranje clana</u></h2>
+    <br>
+    <form id="izmenaClan">    <!-- id forme bitan za JS kod, jer imamo vise formi, pa da znamo kojoj da pristupimo-->
+        <br>
+        <p>Ime</p>
+        <input type="text" id="ime" placeholder="Name" required>
+        <p>Prezime</p>
+        <input type="text" id="prezime" placeholder="Last name" required>
+        <p>Dautm rodjenja</p>
+        <input type="datetime-local" id="datumRodjenja" required>
+        <p>Korisnicko ime</p>
+        <input type="text" id="korisnickoIme" placeholder="Username" required>
+        <p>Lozinka</p>
+        <input type="password" id="lozinka" placeholder="Password" required>
+        <p>Kontak telefon</p>
+        <input type="text" id="kontaktTelefon" placeholder="Phone number" required>
+        <p>E-mail</p>
+        <input type="text" id="eMail" placeholder="name@example.com" required>
+
+        <p><button type="submit" class="btn btn-primary">Azuriraj</button></p>
+
+    </form>
+
+    <br>
+    <p>
+        <a href="http://localhost:63342/webProjekat/static/profil.html?_ijt=16bnqau0d2viq5hh8h084o2pum">Nazad na profil</a>
+    </p>
+</div>
+</body>
+</html>
